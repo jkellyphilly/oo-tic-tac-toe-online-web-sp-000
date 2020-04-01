@@ -112,8 +112,8 @@ class TicTacToe
     self.won? ? @board[self.won?[0]] : nil
   end
 
-  def play(board)
-    until over?(board)
+  def play
+    until self.over?
       turn(board)
     end
 
