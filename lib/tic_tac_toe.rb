@@ -75,7 +75,7 @@ class TicTacToe
       self.display_board
     else
       puts "Not a valid move."
-      turn(board)
+      self.turn
     end
   end
 
