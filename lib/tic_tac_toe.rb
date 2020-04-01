@@ -114,7 +114,7 @@ class TicTacToe
 
   def play
     until self.over?
-      turn(board)
+      self.turn
     end
 
     if draw?(board)
