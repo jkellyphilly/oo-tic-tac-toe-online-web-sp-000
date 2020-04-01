@@ -107,4 +107,9 @@ class TicTacToe
     self.draw? || self.won?
   end
 
+  # Determine the winner
+  def winner
+    won?(board) ? board[won?(board)[0]] : nil
+  end
+
 end
