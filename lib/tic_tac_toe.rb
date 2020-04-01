@@ -21,6 +21,8 @@ class TicTacToe
       " ", " ", " "]
   end
 
+  # INSTNACE METHODS 
+
   # Prints out the current status of the
   # game's board out to the console
   def display_board
@@ -31,5 +33,5 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
-  
+
 end
