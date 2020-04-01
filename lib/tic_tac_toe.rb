@@ -56,12 +56,12 @@ class TicTacToe
   # the current board
   def turn_count
     counter = 0
-    board.each do | space |
-    if (space == "X" || space == "O")
-      counter += 1
-    end
-  end
-  counter
+    @board.each {|space| counter += 1 if self.position_taken?(space)}
+      #if (space == "X" || space == "O")
+        #counter += 1
+      #end
+    #end
+    counter
 end
 
 end
