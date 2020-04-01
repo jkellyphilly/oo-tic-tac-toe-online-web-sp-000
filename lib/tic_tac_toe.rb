@@ -109,7 +109,7 @@ class TicTacToe
 
   # Determine the winner
   def winner
-    won?(board) ? board[won?(board)[0]] : nil
+    self.won? ? @board[self.won?[0]] : nil
   end
 
 end
