@@ -47,4 +47,9 @@ class TicTacToe
     @board[index] != " " && @board[index] != "" && @board[index] != nil
   end
 
+  # Checks to see if a move is valid
+  def valid_move?(index)
+    (index < 0 || index > 8) ? false : !position_taken?(board, index)
+  end
+
 end
