@@ -120,7 +120,7 @@ class TicTacToe
     if self.draw?
       puts "Cat's Game!"
     else
-      puts "Congratulations #{winner(board)}!"
+      puts "Congratulations #{self.winner(board)}!"
     end
   end
 
