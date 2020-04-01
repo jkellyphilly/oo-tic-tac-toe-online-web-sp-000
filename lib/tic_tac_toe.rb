@@ -102,4 +102,9 @@ class TicTacToe
     self.full? && !self.won?
   end
 
+  # Determine if the game is over
+  def over?
+    self.draw? || self.won?
+  end
+
 end
