@@ -112,4 +112,16 @@ class TicTacToe
     self.won? ? @board[self.won?[0]] : nil
   end
 
+  def play(board)
+    until over?(board)
+      turn(board)
+    end
+
+    if draw?(board)
+      puts "Cat's Game!"
+    else
+      puts "Congratulations #{winner(board)}!"
+    end
+  end
+
 end
