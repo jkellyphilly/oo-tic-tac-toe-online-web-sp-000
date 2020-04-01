@@ -72,11 +72,11 @@ class TicTacToe
     index = self.input_to_index(input)
     if self.valid_move?(index)
       move(index, current_player(board))
-    display_board(board)
-  else
-    puts "Not a valid move."
-    turn(board)
+      display_board(board)
+    else
+      puts "Not a valid move."
+      turn(board)
+    end
   end
-end
 
 end
