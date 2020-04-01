@@ -22,7 +22,7 @@ class TicTacToe
   end
 
   # Prints out the current status of the
-  # board out to the console
+  # game's board out to the console
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
