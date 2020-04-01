@@ -31,7 +31,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
-  # Convert a user's input (1-9) to valid 
+  # Convert a user's input (1-9) to valid
   # board index (0-8)
   def input_to_index(user_input)
     user_input.to_i - 1
