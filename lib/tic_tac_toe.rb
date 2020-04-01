@@ -59,6 +59,10 @@ class TicTacToe
     counter
   end
 
-  
+  # Determine whose turn it is based on the number of turns that have been played
+  # ASSUMPTION: player "X" goes first
+  def current_player
+    output = (self.turn_count(@board) % 2) == 0 ? "X" : "O"
+  end
 
 end
