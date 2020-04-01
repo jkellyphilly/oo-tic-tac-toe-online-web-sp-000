@@ -97,4 +97,9 @@ class TicTacToe
     @board.all? {|space| (space == "X" || space == "O")}
   end
 
+  # Determine if the game is a draw
+  def draw?
+    self.full? && !self.won?
+  end
+
 end
