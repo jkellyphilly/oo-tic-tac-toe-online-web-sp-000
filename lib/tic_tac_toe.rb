@@ -20,4 +20,10 @@ class TicTacToe
       " ", " ", " ",
       " ", " ", " "]
   end
+
+  # Prints the current status of the
+  # board out to the console
+  def display_board
+
+  end
 end
