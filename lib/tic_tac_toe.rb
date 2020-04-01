@@ -49,7 +49,7 @@ class TicTacToe
 
   # Checks to see if a move is valid
   def valid_move?(index)
-    (index < 0 || index > 8) ? false : !position_taken?(board, index)
+    (index < 0 || index > 8) ? false : !self.position_taken?(index)
   end
 
 end
