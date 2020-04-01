@@ -83,7 +83,7 @@ class TicTacToe
   # Determine if the game has a winner
   def won?
     WIN_COMBINATIONS.each do | winning_combination |
-      if (@board[winning_combination[0]] == @board[winning_combination[1]] && @board[winning_combination[1]] == @board[winning_combination[2]] && self.position_taken?(winning_combination[0])
+      if @board[winning_combination[0]] == @board[winning_combination[1]] && @board[winning_combination[1]] == @board[winning_combination[2]] && self.position_taken?(winning_combination[0]
         return winning_combination
       else
         false
