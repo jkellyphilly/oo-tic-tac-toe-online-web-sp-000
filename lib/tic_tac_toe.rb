@@ -52,4 +52,16 @@ class TicTacToe
     (index < 0 || index > 8) ? false : !self.position_taken?(index)
   end
 
+  # Count how many turns have been played, given
+  # the current board
+  def turn_count
+    counter = 0
+    board.each do | space |
+    if (space == "X" || space == "O")
+      counter += 1
+    end
+  end
+  counter
+end
+
 end
