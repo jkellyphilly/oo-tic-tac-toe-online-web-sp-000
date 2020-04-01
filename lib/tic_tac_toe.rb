@@ -71,7 +71,7 @@ class TicTacToe
     input = gets.strip
     index = self.input_to_index(input)
     if self.valid_move?(index)
-      move(index, current_player(board))
+      self.move(index, current_player(board))
       display_board(board)
     else
       puts "Not a valid move."
