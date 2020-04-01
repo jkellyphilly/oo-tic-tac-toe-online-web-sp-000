@@ -65,7 +65,8 @@ class TicTacToe
     self.turn_count % 2 == 0 ? "X" : "O"
   end
 
-  # Helper method for getting user's input and moving on the board
+  # Get user's input and put in their move to the board instance variable, if
+  # the user's move is valid
   def turn
     puts "Please enter 1-9:"
     input = gets.strip
