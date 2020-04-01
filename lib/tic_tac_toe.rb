@@ -38,8 +38,8 @@ class TicTacToe
   end
 
   # Update the board with a player's move
-def move(board, index, x_or_o)
-  board[index] = x_or_o
-end
+  def move(index, x_or_o = "X")
+    @board[index] = x_or_o
+  end
 
 end
