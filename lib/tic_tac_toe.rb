@@ -92,4 +92,9 @@ class TicTacToe
     false
   end
 
+  # Determine if the board is full
+  def full?
+    @board.all? {|space| (space == "X" || space == "O")}
+  end
+
 end
